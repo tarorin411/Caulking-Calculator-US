@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="google-site-verification" content="ICWadNm1UEY-5aRTBxc256vuceTrpLu27thxOlF7GGw" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Caulk Calculator - How Many Tubes Do I Need? | Free Online Tool</title>
+    <meta name="description"
+        content="Calculate how many caulk tubes you need for your project. Enter joint dimensions and get instant results. Supports 10.1oz cartridges with 20% waste factor included. Free tool for contractors and DIYers.">
+    <meta name="keywords"
+        content="caulk calculator,caulking,sealant,tubes needed,how much caulk,joint filler,silicone calculator">
+    <meta property="og:title" content="Caulk Calculator - How Many Tubes Do I Need?">
+    <meta property="og:description"
+        content="Calculate caulk needed instantly! Enter length × width × depth and get the number of tubes required.">
+    <meta property="og:type" content="website">
+
+    <!-- AEO: Structured Data (Schema.org JSON-LD) -->
+    <!-- WebApplication Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Caulk Calculator",
+        "description": "Calculate how many caulk tubes you need based on joint dimensions. Supports 10.1oz (300ml) cartridges with 20% waste factor. Free online tool for contractors and DIYers.",
+        "applicationCategory": "UtilityApplication",
+        "operatingSystem": "All",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "featureList": [
+            "Automatic caulk tube calculation",
+            "10.1oz (300ml) cartridge support",
+            "20% waste factor included",
+            "Copy results feature",
+            "Mobile-friendly design"
+        ]
+    }
+    </script>
+
+    <!-- FAQPage Schema - Important for AI Search -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "How do I calculate how much caulk I need?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "To calculate caulk needed: multiply joint width × depth × length to get volume, add 20% for waste, then divide by cartridge size (typically 10.1oz or 300ml). For example: 0.5 inch × 0.5 inch × 100 feet = 25 cubic inches = about 410ml. With 20% waste = 492ml, so you need 2 tubes of 10.1oz caulk."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What is the typical waste factor for caulking?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The typical waste factor for caulking is 10-20%. Most professionals use 20% to account for material left in the tube and nozzle, overfilling joints, cleanup waste, and any rework needed. This ensures you have enough material to complete the job."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How many linear feet does one tube of caulk cover?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "One 10.1oz tube of caulk covers different lengths depending on joint size. For a 1/4 inch × 1/4 inch joint: approximately 48 linear feet. For a 1/2 inch × 1/2 inch joint: approximately 12 linear feet. For a 3/8 inch × 3/8 inch joint: approximately 21 linear feet. These estimates include 20% waste factor."
+                }
+            }
+        ]
+    }
+    </script>
+
+    <!-- HowTo Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "How to Calculate Caulk Tubes Needed",
+        "description": "Step-by-step guide to calculate how many caulk tubes you need for your project",
+        "totalTime": "PT1M",
+        "step": [
+            {
+                "@type": "HowToStep",
+                "position": 1,
+                "name": "Enter the total length",
+                "text": "Enter the total length of joints to be caulked in feet."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 2,
+                "name": "Enter the joint width",
+                "text": "Enter the width of the joint in inches. Typical exterior joints are 3/8 to 1/2 inch."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 3,
+                "name": "Enter the joint depth",
+                "text": "Enter the depth of the joint in inches. If using backer rod, measure to the backer rod."
+            },
+            {
+                "@type": "HowToStep",
+                "position": 4,
+                "name": "Get your results",
+                "text": "The calculator automatically shows the number of tubes needed and total volume. A 20% waste factor is already included."
+            }
+        ]
+    }
+    </script>
+
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 20px 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        h1 {
+            font-size: 22px;
+            text-align: center;
+            margin-bottom: 25px;
+            color: #444;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            font-size: 14px;
+            color: #555;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            box-sizing: border-box;
+            border: 2px solid #ddd;
+            border-radius: 6px;
+            font-size: 18px;
+            transition: border-color 0.3s;
+        }
+
+        input:focus {
+            border-color: #007bff;
+            outline: none;
+        }
+
+        .result-box {
+            margin-top: 25px;
+            padding: 20px;
+            background-color: #e3f2fd;
+            border-radius: 8px;
+            text-align: center;
+            display: none;
+        }
+
+        .result-number {
+            font-size: 48px;
+            font-weight: 800;
+            color: #1565c0;
+            line-height: 1.2;
+        }
+
+        .note {
+            font-size: 12px;
+            color: #888;
+            margin-top: 20px;
+            text-align: right;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        button {
+            flex: 1;
+            padding: 14px;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: transform 0.1s, opacity 0.2s;
+        }
+
+        button:active {
+            transform: translateY(2px);
+        }
+
+        .btn-clear {
+            background-color: #6c757d;
+            box-shadow: 0 4px 6px rgba(108, 117, 125, 0.2);
+        }
+
+        .btn-copy {
+            background-color: #28a745;
+            box-shadow: 0 4px 6px rgba(40, 167, 69, 0.2);
+        }
+
+        .btn-copy:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+            box-shadow: none;
+        }
+
+        .affiliate-link {
+            display: block;
+            margin-top: 20px;
+            text-align: center;
+            text-decoration: none;
+            background: #ff9900;
+            color: white;
+            padding: 15px;
+            border-radius: 6px;
+            font-weight: bold;
+            box-shadow: 0 4px 6px rgba(255, 153, 0, 0.3);
+        }
+
+        .affiliate-link:hover {
+            background: #e68a00;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Caulk Calculator</h1>
+
+        <div class="form-group">
+            <label>Total Length (feet)</label>
+            <input type="number" id="length" placeholder="e.g. 100" inputmode="decimal" min="0" oninput="calculate()">
+        </div>
+
+        <div class="form-group">
+            <label>Joint Width (inches)</label>
+            <input type="number" id="width" placeholder="e.g. 0.5" inputmode="decimal" min="0" step="0.125"
+                oninput="calculate()">
+        </div>
+
+        <div class="form-group">
+            <label>Joint Depth (inches)</label>
+            <input type="number" id="depth" placeholder="e.g. 0.5" inputmode="decimal" min="0" step="0.125"
+                oninput="calculate()">
+        </div>
+
+        <div class="button-group">
+            <button class="btn-clear" onclick="clearAll()">Clear</button>
+            <button class="btn-copy" id="copyBtn" onclick="copyResult()" disabled>Copy Result</button>
+        </div>
+
+        <div class="result-box" id="resultArea" style="display:none;">
+            You need...<br>
+            <span class="result-number" id="resultCount">0</span> tubes<br>
+            <span style="font-size:14px;">(Total: approx. <span id="resultOz">0</span> oz)</span>
+        </div>
+
+        <div id="adArea" style="display:none; margin-top: 20px;">
+            <a href="https://www.amazon.com/s?k=caulk+sealant&tag=YOUR_AMAZON_ID" target="_blank"
+                class="affiliate-link">
+                Shop Caulk on Amazon ➔
+            </a>
+        </div>
+
+        <p class="note">
+            *Based on 10.1oz cartridges with 20% waste factor.<br>
+            *Results are estimates. Actual usage may vary.
+        </p>
+    </div>
+
+    <script>
+        function calculate(showAlert = false) {
+            const len = parseFloat(document.getElementById('length').value);
+            const wid = parseFloat(document.getElementById('width').value);
+            const dep = parseFloat(document.getElementById('depth').value);
+
+            if (isNaN(len) || isNaN(wid) || isNaN(dep)) {
+                if (showAlert) {
+                    alert("Please enter all values");
+                }
+                return;
+            }
+
+            if (len < 0 || wid < 0 || dep < 0) {
+                if (showAlert) {
+                    alert("Please enter positive numbers");
+                }
+                return;
+            }
+
+            // Calculate volume in cubic inches
+            // Length (feet) × 12 = inches, then × width × depth
+            const volumeCubicInches = (len * 12) * wid * dep;
+
+            // Convert cubic inches to fluid ounces (1 cubic inch ≈ 0.554 fl oz)
+            const volumeOz = volumeCubicInches * 0.554;
+
+            // Add 20% waste factor
+            const totalVolumeOz = volumeOz * 1.2;
+
+            // Divide by 10.1oz cartridge and round up
+            const tubes = Math.ceil(totalVolumeOz / 10.1);
+
+            document.getElementById('resultCount').innerText = tubes;
+            document.getElementById('resultOz').innerText = totalVolumeOz.toFixed(1);
+            document.getElementById('resultArea').style.display = 'block';
+            document.getElementById('adArea').style.display = 'block';
+            document.getElementById('copyBtn').disabled = false;
+        }
+
+        function clearAll() {
+            document.getElementById('length').value = '';
+            document.getElementById('width').value = '';
+            document.getElementById('depth').value = '';
+            document.getElementById('resultArea').style.display = 'none';
+            document.getElementById('adArea').style.display = 'none';
+            document.getElementById('copyBtn').disabled = true;
+        }
+
+        function copyResult() {
+            const tubes = document.getElementById('resultCount').innerText;
+            const oz = document.getElementById('resultOz').innerText;
+            const len = document.getElementById('length').value;
+            const wid = document.getElementById('width').value;
+            const dep = document.getElementById('depth').value;
+
+            const text = `Caulk Needed: ${tubes} tubes (${oz} oz total)
+Joint: ${len} ft × ${wid}" wide × ${dep}" deep
+*Based on 10.1oz cartridges, 20% waste included`;
+
+            navigator.clipboard.writeText(text).then(() => {
+                const btn = document.getElementById('copyBtn');
+                const originalText = btn.innerText;
+                btn.innerText = 'Copied!';
+                setTimeout(() => {
+                    btn.innerText = originalText;
+                }, 2000);
+            }).catch(() => {
+                alert('Copy failed');
+            });
+        }
+    </script>
+
+</body>
+
+</html>
